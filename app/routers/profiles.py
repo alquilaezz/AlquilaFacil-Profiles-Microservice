@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 
 from .. import models, schemas
 from ..deps import get_db, get_current_user, CurrentUser
-from ..clients.subscriptions_client import get_user_subscription_status_from_subscriptions
+from ..clients.subscription_client import get_user_subscription_status_from_subscriptions
 
 router = APIRouter(prefix="/api/v1/profiles", tags=["Profiles"])
 
